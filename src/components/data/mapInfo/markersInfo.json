@@ -1,3 +1,23 @@
-{
-    "test":"map"
-}
+[
+    {   
+        "marker-id": 0,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "religious-christian",
+        "name": "Hram svete Petke Paraskeve",
+        "popup-image": "crkvaugljevik.png",
+        "popup-text": "example text,moremoremoremoremoremo emilija fo today",
+        "coordinates": [ 18.996444940567017, 44.69455916715856]
+    },
+    {
+        "marker-id": 1,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "garden",
+        "name": "Vidikovac, Kućica na Njiemcu",
+        "popup-image": "crkvaugljevik.png",
+        "popup-text": "example text,moremoremoremoremoremo emilija fo today",
+        "coordinates": [19.001283645629883, 44.692004143643345]
+    }
+
+]

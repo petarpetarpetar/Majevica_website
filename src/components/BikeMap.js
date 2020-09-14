@@ -3,7 +3,7 @@ import L from 'leaflet'
 import { Map, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import { Container, Row } from 'react-bootstrap';
-
+import MarkersJson from './data/mapInfo/markersInfo.json'
 delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
@@ -21,23 +21,31 @@ class BikeMap extends Component {
   render() {
     const position = [this.state.lat, this.state.lng]
     
-    var json = require('./data/mapInfo/bikePath.json'); //(with path)
-    console.log(json)
-
+    var BikePath = require('./data/mapInfo/bikePath.json'); //(with path)
+    
+    console.log(MarkersJson);
     return (
+      
       <Container>
-        <Row className="justify-content-center">
-          <Map className="map" center={position} zoom={this.state.zoom}>
+
+        <Row className="justify-content-center" id="map">
+          
+          
+          <Map className="map" style={{paddingTop: 5}} center={position} key="mapa" zoom={this.state.zoom}>
           <TileLayer
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <GeoJSON key="geojson" data={json} />
-          <Marker position={position}>
-              <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </Popup>
+          <GeoJSON key="BikePath" data={BikePath} />
+        
+            {MarkersJson.map((item) => (
+            <Marker position={[item['coordinates'][1],item['coordinates'][0]]} key={item['marker-id']}>
+                <Popup>
+                  <h1>A pretty CSS3 popup.</h1> <br /> Easily customizable.
+                </Popup>
             </Marker>
+            ))}
+            
           </Map>
         </Row>
     </Container>

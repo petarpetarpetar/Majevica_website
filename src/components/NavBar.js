@@ -11,7 +11,7 @@ class NavBar extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
             <Nav>
-            <Nav.Link href="#features">Biciklistička staza</Nav.Link>
+            <Nav.Link href="#map">Biciklistička staza</Nav.Link>
             <Nav.Link href="#pricing">Galerija</Nav.Link>
             <Nav.Link href="#pricing">O nama</Nav.Link>
             </Nav>
