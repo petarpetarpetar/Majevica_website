@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import L from 'leaflet'
 import { Map, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Image } from 'react-bootstrap';
 import MarkersJson from './data/mapInfo/markersInfo.json'
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -30,8 +30,7 @@ class BikeMap extends Component {
 
         <Row className="justify-content-center" id="map">
           
-          
-          <Map className="map" style={{paddingTop: 5}} center={position} key="mapa" zoom={this.state.zoom}>
+          <Map className="map" style={{paddingTop: 5, paddingBottom:5}} center={position} key="mapa" zoom={this.state.zoom}>
           <TileLayer
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -40,8 +39,14 @@ class BikeMap extends Component {
         
             {MarkersJson.map((item) => (
             <Marker position={[item['coordinates'][1],item['coordinates'][0]]} key={item['marker-id']}>
-                <Popup>
-                  <h1>A pretty CSS3 popup.</h1> <br /> Easily customizable.
+                <Popup maxWidth={250}>
+                <Image src={item['popup-image']} fluid />
+                <h3>
+                  {item['name']}
+                </h3>
+                <p>
+                  {item['popup-text']}.
+                </p>
                 </Popup>
             </Marker>
             ))}

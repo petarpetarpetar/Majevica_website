@@ -4,6 +4,7 @@ import NavBar from './components/NavBar.js'
 import { Button } from 'react-bootstrap';
 import './App.css';
 import LogoAndTitle from './components/LogoAndTitle.js';
+import PhotoGallery from './components/PhotoGallery.js';
 
 class App extends Component {
 
@@ -16,12 +17,10 @@ class App extends Component {
         <br />
         <br />
         <br />
+        <PhotoGallery />
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        
       </div>
     
       )

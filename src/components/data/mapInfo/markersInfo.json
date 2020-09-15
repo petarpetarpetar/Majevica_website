@@ -5,8 +5,8 @@
         "marker-size": "medium",
         "marker-symbol": "religious-christian",
         "name": "Hram svete Petke Paraskeve",
-        "popup-image": "crkvaugljevik.png",
-        "popup-text": "example text,moremoremoremoremoremo emilija fo today",
+        "popup-image": "/gallery/slika (2).jpg",
+        "popup-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum ",
         "coordinates": [ 18.996444940567017, 44.69455916715856]
     },
     {
@@ -15,8 +15,8 @@
         "marker-size": "medium",
         "marker-symbol": "garden",
         "name": "Vidikovac, Kućica na Njiemcu",
-        "popup-image": "crkvaugljevik.png",
-        "popup-text": "example text,moremoremoremoremoremo emilija fo today",
+        "popup-image": "/gallery/slika (1).jpg",
+        "popup-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" ,
         "coordinates": [19.001283645629883, 44.692004143643345]
     }
 

@@ -2,6 +2,7 @@
   margin-top: 5vh;
   height: 70vh;
   width: 90vw;
+  padding-bottom: 5px;
 }
 
 #wrapper div {
@@ -16,14 +17,19 @@
 }
 
 #logoimage{
-  width: 30vmax;
+  width: 30vh;
+  height: 100%;
   padding-bottom: 5vh;
   padding-top: 8vh;
 }
 
 #logotext{
   font-family: Grandstander;
-  font-size: 2vmax;
+  font-size: 3vmax;
   text-align: center;
   color: #D3FBD8;
+}
+
+#photoGallery{
+  padding-top: 1vw;
 }
